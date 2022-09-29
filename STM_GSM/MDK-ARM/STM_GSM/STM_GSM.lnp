@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"stm_gsm\startup_stm32f405xx.o"
+"stm_gsm\main.o"
+"stm_gsm\stm32f4xx_it.o"
+"stm_gsm\stm32f4xx_hal_msp.o"
+"stm_gsm\stm32f4xx_hal_tim.o"
+"stm_gsm\stm32f4xx_hal_tim_ex.o"
+"stm_gsm\stm32f4xx_hal_uart.o"
+"stm_gsm\stm32f4xx_hal_rcc.o"
+"stm_gsm\stm32f4xx_hal_rcc_ex.o"
+"stm_gsm\stm32f4xx_hal_flash.o"
+"stm_gsm\stm32f4xx_hal_flash_ex.o"
+"stm_gsm\stm32f4xx_hal_flash_ramfunc.o"
+"stm_gsm\stm32f4xx_hal_gpio.o"
+"stm_gsm\stm32f4xx_hal_dma_ex.o"
+"stm_gsm\stm32f4xx_hal_dma.o"
+"stm_gsm\stm32f4xx_hal_pwr.o"
+"stm_gsm\stm32f4xx_hal_pwr_ex.o"
+"stm_gsm\stm32f4xx_hal_cortex.o"
+"stm_gsm\stm32f4xx_hal.o"
+"stm_gsm\stm32f4xx_hal_exti.o"
+"stm_gsm\system_stm32f4xx.o"
+--strict --scatter "STM_GSM\STM_GSM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM_GSM.map" -o STM_GSM\STM_GSM.axf

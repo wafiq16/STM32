@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"dht22\startup_stm32f407xx.o"
+"dht22\my_dht22.o"
+"dht22\main.o"
+"dht22\stm32f4xx_it.o"
+"dht22\stm32f4xx_hal_msp.o"
+"dht22\stm32f4xx_hal_tim.o"
+"dht22\stm32f4xx_hal_tim_ex.o"
+"dht22\stm32f4xx_hal_uart.o"
+"dht22\stm32f4xx_hal_rcc.o"
+"dht22\stm32f4xx_hal_rcc_ex.o"
+"dht22\stm32f4xx_hal_flash.o"
+"dht22\stm32f4xx_hal_flash_ex.o"
+"dht22\stm32f4xx_hal_flash_ramfunc.o"
+"dht22\stm32f4xx_hal_gpio.o"
+"dht22\stm32f4xx_hal_dma_ex.o"
+"dht22\stm32f4xx_hal_dma.o"
+"dht22\stm32f4xx_hal_pwr.o"
+"dht22\stm32f4xx_hal_pwr_ex.o"
+"dht22\stm32f4xx_hal_cortex.o"
+"dht22\stm32f4xx_hal.o"
+"dht22\stm32f4xx_hal_exti.o"
+"dht22\system_stm32f4xx.o"
+--strict --scatter "DHT22\DHT22.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DHT22.map" -o DHT22\DHT22.axf
